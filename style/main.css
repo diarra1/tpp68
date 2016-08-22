@@ -1,11 +1,18 @@
+/* Reset */
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
 body{
 	font-family: 'Lato', sans-serif;
 	background-color: #bb810b;
 }
+
 nav ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
     background-color: #008059;
     border-radius: 5px;
