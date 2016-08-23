@@ -123,3 +123,34 @@ i{
 #home{
     color: white;
 }
+legend{
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
+#rechercher{
+    background-color:green;
+    display:block;
+    height:25px;
+    margin-top:5px;
+}
+#annuler{
+    background-color:green;
+    display:inline-block;
+    height:25px;
+}
+h2{
+    background-color:#7fffbb;
+    text-align:center;
+    min-height: 50px;
+    line-height: 50px;
+    color:green;
+}
+label{
+    margin-left:5px;
+    padding:5px;
+}
+label{
+    display:block;
+}
+

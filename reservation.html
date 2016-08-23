@@ -3,108 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <title>reservation</title>
-    <link rel="stylesheet"href="style/main.css"/>
+    <link rel="stylesheet" href="style/main.css"/>
 </head>
 <body>
 <div id="menu">
 
-        <ul>
-            <li><a href="index.html">Acceuil</a></li>
-            <li><a href="reservation.html">Reservation</a></li>
-            <li><a href="catalogue.html">Catalogue</a></li>
-            <li><a href="contact.html">Contact</a></li>
+    <ul>
+        <li><a href="index.html">Acceuil</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+        <li><a href="catalogue.html">Catalogue</a></li>
+        <li><a href="contact.html">A PROPOS</a></li>
 
 
-
-        </ul>
-    </div>
-<form id ="contain" action="">
-<h2>formulaire de reservation</h2>
+    </ul>
+</div>
+<form id="contain" action="">
+    <h2>formulaire de reservation</h2>
     <fieldset id="identite">
         <legend>Vous êtes:</legend>
         <ul>
             <li>
                 <label for="nom">Nom</label>
-                <input type="text" id="nom" placeholder="nom" required="required">
+                <input type="text" id="nom" placeholder="nom" autofocus required="required">
             </li>
             <li>
                 <label for="prenom">Prénom</label>
-                <input type="text" id="prenom" placeholder="prenom" required="required">
+                <input type="text" id="prenom" required="required">
             </li>
             <li>
                 <label for="telephone">telephone</label>
-                <input type="tel"id="telephone" pattern="^\(?\d{3}\)?(-|)?\d{3}(-| )?\d{2}(-|)?\d{2}" placeholder="514-621-87-82" required="required" >
+                <input type="tel" id="telephone" pattern="^\(?\d{3}\)?(-|)?\d{3}(-| )?\d{2}(-|)?\d{2}"
+                       placeholder="514-621-87-82" required="required">
             </li>
 
             <li>
-                <label for="email">email</label>
+                <label for="email">Email</label>
                 <input type="email" placeholder="mot_ de_ passe" id="email" required>
             </li>
             <li>
-                <label for="age"> votre age</label>
-                <input type="number" id="age" min="0" max="199"  value="2" required="required">
-            </li>
-            <li>
-                <label for="date_de_naissance">date</label>
-                <input type="date" id="date_de_naissance" value="2000-12-11" required="required">
-            </li>
-            <li>
-                <label for="autre date">autre date</label>
-                <input type="datetime-local" id="autre date"  value="2000-12-13 10:00"    required="required">
-            </li>
-        </ul>
-
-
-    </fieldset>
-
-    <fieldset id="liste fruits">
-        <legend>Vos choix</legend>
-        <ul>
-            <li>
-                <input type="checkbox" id="pommes" />
-                <label for="choix1">Choix 1</label>
-            </li>
-            <li>
-                <input type="checkbox" id="bananes"/>
-                <label for="bananes">bananes</label>
-            </li>
-            <li>
-                <input type="checkbox" id="raisins"/>
-                <label for="raisins">raisins</label>
-            </li>
-            <li>
-                <input type="checkbox" id="poires"/>
-                <label for="poires">poires</label>
-            </li>
-            <li>
-                <input type="checkbox" id="mangues"/>
-                <label for="mangues">mangues</label>
-            </li>
-            <li>
-                <input type="checkbox" id="poires"/>
-                <label for="poires">poires</label>
+                <label for="personnes_pour_la_reservation"> Nombre de personnes pour la reservation</label>
+                <input type="number" id="personnes_pour_la_reservation" min="0" max="30" value="" required="required">
             </li>
 
         </ul>
-    </fieldset>
+        <label for="choix_pommes">Indiquer votre choix </label>
+        <input list="pommes" type="text" id="choix_pommes"/>
+        <datalist id="pommes">
+            <option>pommes</option>
+            <option>bananes</option>
+            <option>mangues</option>
+            <option>cerises</option>
+            <option>raisins</option>
+        </datalist>
+        <label for="boutons">Sexe</label>
+        <input type="radio" name="sexe" value="h"  id="sexe" checked >hommes  <input type="radio" name="sexe" value="" checked id="boutons"/>femmes
+<textaria name="mame" rows="5" cols="20">messages</textaria>
+        <input type="submit" id="rechercher" value="Soumettre"/>
+        <input type="reset" id="annuler" value="annuler" formnovalidate="formnovalidate"/>
 
 
-    <input type="submit" value="Soumettre" />
-    <input type="submit" value="sauvegarder votre formulaire" formnovalidate="formnovalidate" />
+
+
+
+
+       </fieldset>
 
 </form>
 
-
-    <div id=" boite_recherche">
-
-
-
-        <label for="recherche">recherche</label>
-        <input type="search" name="recherche" id="recherche" value="mame" pattern="\w(2,0)" placeholder="min 2 caracteres" required="required" />
-        <input type="submit" name="ok" value="ok" value="" required="required">
-
-
-    </div>
 
 </body>
 </html>
