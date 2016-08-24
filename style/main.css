@@ -1,15 +1,159 @@
 /* Reset */
-*{
-	margin:0;
-	padding: 0;
-	box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body{
     font-family: 'Lato', sans-serif;
     background-color: #bb810b;
 }
 
+nav{
+    background-color:#1565c0;
+    border-radius: 10px;
+    height: 50px;
+    width: 1270px;
+    margin-right:  5px;
+    margin-left: 5px;
 }
+
+nav>ul>li>a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px ;
+    text-decoration: none;
+}
+nav>ul>li{
+    height: 50px;
+}
+nav>ul>li a:hover {
+    background-color: #006064;
+
+}
+nav>ul>li {
+    float: left;
+
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #008059;
+    border-radius: 10px;
+    box-shadow: 1px 4px 5px black;
+
+
+}
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 7px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    float: right;
+    height: 10px;
+    margin-top: 10px;
+    margin-right: 10px
+}
+
+input[type=text]:focus {
+    width: 50%;
+}
+#logo{
+    width: 180px;
+    height: 70px;
+    margin-left: 10px;
+
+}
+#haut {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+#haut>li {
+    float: right;
+}
+
+#haut>li>a {
+    display: block;
+    color: #673ab7;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.catalogue{
+    position: absolute;
+    margin-right: 140px
+}
+.pomme_blanc{
+    position: relative;
+}
+
+
+.cata>ul>{
+    list-style-type: none;
+    display: block;
+
+}
+.pomme_blanc>details>p{
+    width: 200px;
+    margin: 20px;
+    margin-top: 10px;
+    background-color: #006064;
+    border-radius: 5px;
+    padding: 10px;
+    color: black;
+}
+.pomme_blanc>ul{
+    list-style-type: none;
+}
+.pomme_blanc img{
+    margin: 20px;
+    width: 200px;
+    margin-bottom: 0px;
+    height: 190px;
+    width: 219px;
+
+
+
+}
+.pomme_blanc{
+    list-style-type: none;
+}
+.catalogue .cata .pomme_blanc{
+    display: block;
+    float: right;
+}
+summary{
+    margin: 20px;
+    margin-bottom: 0;
+    background-color: #008059;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 0px;
+    box-shadow:1px 5px 8px black;
+    width: 200px;
+
+
+}
+.cata{
+    display: inline;
+}
+
 #banner1{
     display:block;
     background-color:#7fffbb;
@@ -102,11 +246,15 @@ footer{
     width: 1244px;
     margin-right: 40px;
 }
+.cata{
+    display: inline;
+}
 .footer{
-    float: right;
+    float: left;
     position: relative;
-    width: 200px;
-    margin: 50px;
+    width:200px;
+    margin: 20px;
+    margin-top: 50px
 }
 #map{
     width: 180px;
@@ -127,6 +275,58 @@ legend{
     width:1px;
     height:1px;
     overflow:hidden;
+}
+p.footer:nth-child(2),p.footer:nth-child(3),p.footer:nth-child(4){
+    margin-left: 73px;
+}
+#vide{
+    width: 100%;
+    height: 50px;
+    background-color: #008059;
+    border: 1px solid black;
+    box-shadow: 1px 4px 2px black;
+    border-radius: 10px;
+    position: relative;
+    margin-top: 10px;
+}
+details>p{
+    transition: 3s ease-in-out;
+}
+#CalvilleBlancHiver{
+    margin: 20px;
+    position: relative;
+    margin-left: 200px;
+    width: 400px;
+    background-color: #4caf50;
+    padding: 20px;
+    border-radius: 5px;
+}
+#CalvilleBlancHiver:first-letter  {
+    color: red;
+    font-size: 200%;
+
+}
+.CalvilleBlancHiver{
+    margin: 20px;
+    margin-bottom: 0;
+
+}
+figure{
+    position:absolute;
+    background-color: #4caf50;
+    padding: 20px;
+    margin: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius:  5px;
+    border-top-left-radius: 5px;
+}
+figcaption{
+    margin: 20px;
+    margin-bottom: 0;
+}
+video{
+    margin-top: 920px;
+    width: 1200px
 }
 #rechercher{
     background-color:green;
@@ -153,4 +353,43 @@ label{
 label{
     display:block;
 }
+@media screen and (max-width:780px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
 
+    .pomme_blanc {
+        margin-top: 40px;
+    }
+
+    #haut > li > a {
+        display: block;
+        color: #673ab7;
+        text-align: center;
+        padding: 10px 10px;
+        text-decoration: none;
+    }
+
+    #haut {
+        margin-left: 129px;
+        margin-right: 100px;
+        width: 343px;
+        font-size: 10px;
+    }
+
+    i.fa.fa-home {
+        height: 10px;
+        font-size: 21px;
+    }
+
+    #logo {
+        margin-left: 252px;
+        margin-right: 70px;
+        margin-top: 30px;
+    }
+
+    nav {
+        width: 682px;
+    }
+}
